@@ -1,0 +1,50 @@
+.cta {
+    padding: 13rem 1.2rem 0;
+    text-align: center;
+
+    @media (min-width: 600px) and (max-width: 800px) {
+        padding: 13rem 4rem 0;
+    }
+
+    &__box {
+        background-color: #fff;
+        padding: 6rem 2rem 5rem;
+        box-shadow: $shadow-dark;
+        border-radius: 20px;
+        transform: translateY(36%);
+        z-index: 1;
+    }
+
+    @media (min-width: $bp-md) {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    &__text {
+
+        h2 {
+            font-size: 2rem;
+
+            @media (min-width: 700px) {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 3.5rem;
+        display: inline-block;
+        padding: 1.5rem 6rem;
+        background-color: $pink;
+        border-radius: 100px;
+        font-size: 1.2rem;
+        font-family: poppins;
+        color: #fff;
+        box-shadow: $shadow-dark;
+
+        @media (min-width: $bp-md) {
+            font-size: 1.8rem;
+            padding: 3rem 10rem;
+        }
+    }
+}

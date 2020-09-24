@@ -1,0 +1,108 @@
+.header {
+    background-color: $pale-cyan;
+    background-image: url(../images/bg-hero-mobile.svg);
+    background-position: center;
+    background-size: cover;
+
+    @media (min-width: $bp-md) {
+        background-image: url(../images/bg-hero-desktop.svg);
+        background-size: contain;
+        background-position: top;
+    }
+
+    &__nav {
+        padding: 2.5rem 1.8rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (min-width: $bp-md) {
+            padding: 5rem 6rem 0;
+        }
+
+        &-btn {
+            display: inline-block;
+            padding: .8rem 3rem;
+            background-color: #fff;
+            border-radius: 100px;
+            color: $dark-cyan;
+            font-size: 1rem;
+            font-family: poppins;
+            font-weight: 700;
+            box-shadow: $shadow-dark;
+
+            @media (min-width: $bp-md) {
+                padding: 1.5rem 6.5rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__logo {
+        height: 2rem;
+        width: 12.5rem;
+
+        @media (min-width: $bp-md) {
+            height: 3.5rem;
+            width: 20rem;
+        }
+    }
+
+    &__content {
+        text-align: center;
+        padding: 10rem 4rem 4rem;
+
+        @media (min-width: $bp-md) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6.5rem 5.5rem 6.5rem;
+            text-align: left;
+        }
+    }
+
+    &__text {
+        @media (min-width: $bp-md) {
+            flex-basis: 45%;
+            padding-right: 3rem;
+        }
+
+        &-btn {
+            display: inline-block;
+            padding: 1.6rem 5rem 1.8rem;
+            background-color: $pink;
+            font-size: 1.3rem;
+            color: #fff;
+            border-radius: 100px;
+            box-shadow: $shadow-dark;
+            font-family: poppins;
+
+            @media (min-width: $bp-md) {
+                padding: 2rem 7rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__para {
+        padding: 4rem 0;
+        color: $dark-cyan;
+        font-size: 1.6rem;
+
+        @media (min-width: $bp-md) {
+            font-size: 1.8rem;
+            padding: 3.5rem 0 3rem;
+        }
+    }
+
+    &__photo {
+        margin-top: 6.5rem;
+        margin-bottom: 4rem;
+
+        @media (min-width: $bp-md) {
+            margin: 0;
+            width: 60%;
+            height: 100%;
+        }
+    }
+}
